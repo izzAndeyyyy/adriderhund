@@ -1,4 +1,4 @@
 devices:
 - ip: 10.1.40.1
   name: device-10-1-40-1
-  type: mikrotik_ios
+  type: mikrotik_routeros
