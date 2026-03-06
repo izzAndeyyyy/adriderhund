@@ -1,0 +1,38 @@
+# Python virtual environment
+venv/
+.env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# AWS credentials (sehr wichtig!)
+.aws/
+awscliv2.zip
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
+
+# Optional: lokale Config Backups nicht pushen
+# (wenn du sie nur in S3 speichern willst)
+# configs/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
