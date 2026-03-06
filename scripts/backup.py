@@ -19,7 +19,7 @@ for device in devices:
             password=""
         )
 
-        config = connection.send_command("/export", expect_string=r"#", delay_factor=4)
+        config = connection.send_command_timing("/export")
 
         filename = f"{backup_dir}/{device['name']}_{datetime.now().date()}.cfg"
 
