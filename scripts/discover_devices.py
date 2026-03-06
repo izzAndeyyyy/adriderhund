@@ -21,7 +21,7 @@ devices = []
 for ip in ips:
 
     name = f"device-{ip.replace('.', '-')}"
-    dev_type = "cisco_ios"
+    dev_type = "mikrotik_ios"
 
     devices.append({
         "name": name,
