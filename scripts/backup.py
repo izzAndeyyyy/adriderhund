@@ -15,11 +15,11 @@ for device in devices:
         connection = ConnectHandler(
             device_type=device["type"],
             host=device["ip"],
-            username="backup",
-            password="backup123"
+            username="admin",
+            password=""
         )
 
-        config = connection.send_command("show running-config")
+        config = connection.send_command("export")
 
         filename = f"{backup_dir}/{device['name']}_{datetime.now().date()}.cfg"
 
