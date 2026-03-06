@@ -36,5 +36,5 @@ for device in devices:
 
 os.system("git add .")
 os.system('git commit -m "daily config backup"')
-os.system("git push origin main")
+os.system("git push origin master")
 os.system("aws s3 sync configs s3://backup-bucket-cloud")
