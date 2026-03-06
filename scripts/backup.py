@@ -31,8 +31,8 @@ for device in devices:
         print(f"{device['name']} backup successful")
 
     except Exception as e:
-
         print(f"{device['name']} backup failed")
+        print(e)
 
 os.system("git add .")
 os.system('git commit -m "daily config backup"')
